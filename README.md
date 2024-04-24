@@ -71,28 +71,28 @@ Here's why you should use this chatbot:
 ### Prerequisites
 
 1. Install Git: If you don't already have Git installed on your computer, you'll need to install it first. You can download Git from [git-scm.com](git-scm.com)
-
-### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+2. Copy the Repository URL: On the repository page, click on the "Code" button. This will open a dropdown where you can see the URL to clone the repository. You can choose either to clone with HTTPS or with SSH (SSH requires that you have set up your SSH keys in GitHub).
+3. Open Your Terminal or Command Prompt: Open your terminal (or command prompt in Windows) and navigate to the directory where you want to clone the repository (this example uses desktop as the directory, but feel free to change).
+* On Windows:
+   ``` sh
+   cd Desktop
    ```
-3. Install NPM packages
-   ```sh
-   npm install
+* On Mac or Linux:
+   ``` sh
+   cd ~/Desktop
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+* Then clone the repository:
+   ``` sh
+   git clone https://github.com/wewefel/Triton_Bot.git
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Virtual Environment
 
+_Creating a virtual environment is important for maintaining its own dependencies independent of other projects. This prevents conflicts between package versions that can lead to bugs and compatibility issues._
 
+1. Ensure Python 3.9.0 is installed:
+* Before starting, make sure Python 3.9.0 is installed on your system. You can check this by running python3 --version in your terminal or command prompt. If it’s not installed, you should install it from the official Python website.
+2. 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
