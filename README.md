@@ -45,8 +45,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 In the recent year, chatbots have gained tremendous popularity as methods of improving website functionality and usability. There are several companies offering chatbot builders, but these services are often oversimplified due to their no-code implementation and extremely expensive.
 However, the chatbot used in this project has infinite scalability and requires little-to-no cost.
 
@@ -59,6 +57,8 @@ Here's why you should use this chatbot:
 * Consistent customer interactions
 * And more!
 
+### How it Works (for non-programmers)
+
 
 
 
@@ -70,9 +70,10 @@ Here's why you should use this chatbot:
 
 ### Prerequisites
 
-1. Ensure Python 3.9.0 is installed:
-* Before starting, make sure Python 3.9.0 is installed on your system. You can check this by running python3 --version in your terminal or command prompt. If it’s not installed, you should install it from the official Python website.
-2. Install Git: If you don't already have Git installed on your computer, you'll need to install it first. You can download Git from [here](https://git-scm.com/).
+1. Ensure Python 3.9.0 or greater is installed:
+* Before starting, make sure Python 3.9.0 or any newer version is installed on your system. You can check this by running python3 --version in your terminal or command prompt. If it’s not installed, you should install it from the official Python website [here](https://www.python.org/downloads).
+2. Install Git:
+* If you don't already have Git installed on your computer, you'll need to install it first. You can download Git from [here](https://git-scm.com/).
 3. Open Your Terminal or Command Prompt: Navigate to the directory where you want to clone the repository (this example uses desktop as the directory, but feel free to change).
 * On Windows:
    ``` sh
@@ -121,6 +122,15 @@ _Creating a virtual environment is important for maintaining its own dependencie
   ```
 5. Make sure the script is being run in your virtual environment. For example, in VS Code it should say 'Python 3.9.0 env' at the bottom of your screen, and in the VS Code command prompt you should see '(env)' before your username.
 
+
+### OpenAI Key
+1. If you have not already, create an OpenAI profile [here](https://platform.openai.com/).
+2. On the left side of your screen, click on "API keys", then click "Create new secret key".
+3. Copy the secret key (it should be a long strong of random letters and numbers) and store it in the .env.example file.
+4. Rename ".env.example" to ".env".
+
+
+
 <!-- USAGE EXAMPLES -->
 ## Usage
 
@@ -145,9 +155,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Walalce Wefel - wewefel@ucsd.edu
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
