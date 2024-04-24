@@ -59,7 +59,35 @@ Here's why you should use this chatbot:
 
 ### How it Works (for non-programmers)
 
+1. main.py - Initializing the Chatbot:
+This file is the core of your chatbot. It starts by loading necessary configurations and setting up tools that your chatbot will use. Specifically, it:
 
+* Establishes a connection to a data source or service, represented here as "rec_engine", which seems to handle queries related to "UC San Diego Recreation".
+* Initializes a chatbot with a predefined model ("gpt-3.5-turbo-0125") capable of understanding and generating human-like text.
+* Defines a function, chat_with_bot, which takes user input, processes it through the chatbot, and returns the chatbot's response. If the chatbot is unsure, it asks for clarification.
+2. pdf.py - Handling PDF Data:
+This file manages interactions with PDF documents. It:
+
+Loads data from a PDF file, presumably containing information relevant to the chatbot's knowledge base.
+Builds or loads an index from this data, allowing the chatbot to efficiently search and retrieve information from the PDF when answering queries.
+3. prompts.py - Setting Up Query Templates:
+This file seems to define templates for queries that your chatbot might receive, helping it understand how to process and respond to various types of inquiries. It:
+
+Defines an instruction set for converting user queries into executable code, specifically aimed at processing data.
+Establishes a context or purpose for the chatbot, which in this case is to provide information about UC San Diego Recreation facilities.
+4. app.py - Web Application Interface:
+This script uses Flask, a web framework, to create a web interface for your chatbot. It:
+
+Sets up web routes, which are essentially paths users can navigate to interact with your chatbot through a web page.
+Defines functions for what should happen when users visit these routes, like displaying the chat interface or handling a query sent by a user.
+5. index.html - The Web Page:
+This is the HTML file that defines the structure of the web page where users can interact with the chatbot. It includes elements like text boxes and buttons that users will use to input their questions.
+
+6. style.css - Styling the Web Page:
+This CSS file adds styles to the web page, defining how elements should look visually (like colors, fonts, and layouts) to make the user interface appealing and easy to use.
+
+7. script.js - Interactivity of the Web Page:
+This JavaScript file makes the web page interactive. It handles user actions, like clicking the submit button after typing a question, and ensures that these actions trigger responses from the chatbot.
 
 
 
