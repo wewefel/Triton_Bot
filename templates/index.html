@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Interface</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Include FontAwesome for icons (if you're using icons in your interface) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="chat-box" id="chat-box">
+        <div class="chat-box-header">
+            <h3>Message Us</h3>
+            <p><i class="fa fa-times" onclick="closeChat()"></i></p> <!-- Add an onclick event to close/hide the chat -->
+        </div>
+        <div class="chat-box-body" id="chatbox-body">
+            <!-- Dynamically added messages will appear here -->
+        </div>
+        <div class="chat-box-footer">
+            <form id="chat-form" onsubmit="sendMessage(); return false;"> <!-- Prevent default form submission -->
+                <input id="user-input" type="text" placeholder="Enter Your Message" />
+                <button type="submit" class="send"><i class="far fa-paper-plane"></i></button> <!-- Use a button for submission -->
+            </form>
+        </div>
+    </div>
+    <div class="chat-button" onclick="openChat()"><span></span></div> <!-- Add an onclick event to show/open the chat -->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
