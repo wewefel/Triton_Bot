@@ -70,9 +70,10 @@ Here's why you should use this chatbot:
 
 ### Prerequisites
 
-1. Install Git: If you don't already have Git installed on your computer, you'll need to install it first. You can download Git from [git-scm.com](git-scm.com)
-2. Copy the Repository URL: On the repository page, click on the "Code" button. This will open a dropdown where you can see the URL to clone the repository. You can choose either to clone with HTTPS or with SSH (SSH requires that you have set up your SSH keys in GitHub).
-3. Open Your Terminal or Command Prompt: Open your terminal (or command prompt in Windows) and navigate to the directory where you want to clone the repository (this example uses desktop as the directory, but feel free to change).
+1. Ensure Python 3.9.0 is installed:
+* Before starting, make sure Python 3.9.0 is installed on your system. You can check this by running python3 --version in your terminal or command prompt. If it’s not installed, you should install it from the official Python website.
+2. Install Git: If you don't already have Git installed on your computer, you'll need to install it first. You can download Git from [here](https://git-scm.com/).
+3. Open Your Terminal or Command Prompt: Navigate to the directory where you want to clone the repository (this example uses desktop as the directory, but feel free to change).
 * On Windows:
    ``` sh
    cd Desktop
@@ -90,9 +91,35 @@ Here's why you should use this chatbot:
 
 _Creating a virtual environment is important for maintaining its own dependencies independent of other projects. This prevents conflicts between package versions that can lead to bugs and compatibility issues._
 
-1. Ensure Python 3.9.0 is installed:
-* Before starting, make sure Python 3.9.0 is installed on your system. You can check this by running python3 --version in your terminal or command prompt. If it’s not installed, you should install it from the official Python website.
-2. 
+1. If Triton_Bot is on your desktop, use this command to navigate to the directory:
+* Windows:
+  ``` sh
+  cd Desktop\Triton_Bot
+  ```
+* Mac or Linux:
+  ``` sh
+  cd ~/Desktop/Triton_Bot
+  ```
+2. Once you are inside the Triton_Bot directory, create the virtual environment using:
+   ``` sh
+   python3 -m venv env
+   ```
+* This command creates a new folder in the TritonBot directory called 'env' where the virtual environment files will be stored.
+3. Activate the Virtual Environment:
+* Windows:
+  ``` sh
+  env\Scripts\activate
+  ```
+* Mac or Linux:
+  ``` sh
+  source env/bin/activate
+  ```
+4. Install Requirements:
+* With the virtual environment activated, install all the packages listed in the requirements.txt file by running:
+  ``` sh
+  pip install -r requirements.txt
+  ```
+5. Make sure the script is being run in your virtual environment. For example, in VS Code it should say 'Python 3.9.0 env' at the bottom of your screen, and in the VS Code command prompt you should see '(env)' before your username.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -103,40 +130,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
