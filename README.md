@@ -110,12 +110,10 @@ After our training information is properly indexed, the user's query is passed t
 7. script.js - Interactivity of the Web Page:
 * Makes the web page interactive. Handles user actions, like clicking the submit button after typing a question, and ensures that these actions trigger responses from the chatbot.
 
-
+[Back to Top](#top)
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
-
 
 ### Prerequisites
 
@@ -136,6 +134,8 @@ After our training information is properly indexed, the user's query is passed t
    ``` sh
    git clone https://github.com/wewefel/Triton_Bot.git
    ```
+[Back to Top](#top)
+
 
 ### Virtual Environment
 
@@ -171,6 +171,7 @@ _Creating a virtual environment is important for maintaining its own dependencie
   ```
 5. Make sure the script is being run in your virtual environment. For example, in VS Code it should say 'Python 3.9.0 env' at the bottom of your screen, and in the VS Code command prompt you should see '(env)' before your username.
 
+[Back to Top](#top)
 
 ### OpenAI Key
 1. If you have not already, create an OpenAI profile [here](https://platform.openai.com/).
@@ -185,12 +186,14 @@ _Creating a virtual environment is important for maintaining its own dependencie
 3. Talk to the chatbot!
 4. Make sure all of your imports are inside your virtual environment folder and that you are running the script inside your virtual environment.
 
+[Back to Top](#top)
+
 <!-- USAGE EXAMPLES -->
 ## Usage
 
 
 
-
+[Back to Top](#top)
 
 <!-- LICENSE -->
 ## License
@@ -205,7 +208,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 Wallace Wefel - [LinkedIn](https://www.linkedin.com/in/wallace-wefel-67a932104/) - wewefel@ucsd.edu
 
 
-
+[Back to Top](#top)
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
