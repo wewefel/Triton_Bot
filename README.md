@@ -177,6 +177,11 @@ _Creating a virtual environment is important for maintaining its own dependencie
 4. Rename ".env.example" to ".env".
 
 
+### Run the Chatbot!
+1. Run app.py.
+2. Ctrl + Click the local host in the command prompt.
+3. Talk to the chatbot!
+4. Make sure all of your imports are inside your virtual environment folder and that you are running the script inside your virtual environment.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
