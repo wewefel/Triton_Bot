@@ -48,13 +48,28 @@
 In the recent year, chatbots have gained tremendous popularity as methods of improving website functionality and usability. There are several companies offering chatbot builders, but these services are often oversimplified due to their no-code implementation and extremely expensive.
 However, the chatbot used in this project has infinite scalability and requires little-to-no cost.
 
-Here's why you should use this chatbot:
-* 24/7 immediate support
+### Why Triton Bot is Helpful
+* 24/7 immediate support  
+  * Chatbots are available around the clock, meaning they can provide immediate responses to customer inquiries at any time, day or night. This is particularly valuable because it caters to customers who may seek help outside of standard business hours or when staff is overwhelmed.
+  * Immediate response times can significantly boost customer satisfaction and can be a deciding factor in retaining customers who seek instant solutions.
 * Enhancing user experience
+  * A chatbot can make navigating a website easier by answering questions, providing recommendations, and guiding users through the site, which enhances the overall user experience.
+  * Good user experience keeps visitors on your website longer and encourages them to return, increasing the likelihood of converting visits into sales.
 * Streamlining customer service
+  * Chatbots can handle a large volume of queries simultaneously, something that would require many human agents otherwise.
+  * They can quickly sort and direct queries to the appropriate channels if human intervention is needed, thus streamlining the customer service process.
+  * This helps in managing customer service during high traffic times without compromising the quality of service.
 * Improving business operations
+  * By automating responses and handling routine inquiries, chatbots free up human agents to focus on more complex and high-value interactions.
+  * This optimization of workload can lead to more efficient business operations, as resources can be better allocated, leading to faster resolution of issues and more personalized customer service where it counts.
 * Cost efficient
+  * Implementing a chatbot is significantly more cost-effective than employing a full-time staff for customer service. Chatbots reduce the labor cost involved in handling customer interactions, especially those that are routine and repetitive.
+  * Over time, this can lead to significant cost savings, allowing UCSD Recreation to invest resources elsewhere to grow their business.
+  * Approximate server cost: $5-10/month. Cost of ChatGPT: Input $0.50/1M (million) tokens, Output $1.50/1M (million) tokens.
+    * Tokens = pieces of words. Basically, it is extremely cheap.
 * Consistent customer interactions
+  * Chatbots provide a consistent level of service with every interaction. They follow predefined workflows and responses, ensuring that every customer receives the same information and quality of service.
+  * This consistency helps in building trust and reliability, as customers feel confident that they will receive the same helpful and accurate information every time they interact with the chatbot.
 * And more!
 
 ### How it Works (for non-programmers)
