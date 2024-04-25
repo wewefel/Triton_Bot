@@ -1,4 +1,4 @@
-
+<a name="top"></a>
 
 
 
@@ -71,6 +71,8 @@ However, the chatbot used in this project has infinite scalability and requires 
   * Chatbots provide a consistent level of service with every interaction. They follow predefined workflows and responses, ensuring that every customer receives the same information and quality of service.
   * This consistency helps in building trust and reliability, as customers feel confident that they will receive the same helpful and accurate information every time they interact with the chatbot.
 * And more!
+
+[Back to Top](#top)
 
 ### How it Works (for non-programmers)
 
