@@ -21,7 +21,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#how-it-works">How it Works</a></li>
+        <li><a href="#how-it-works-(for-non-programmers)">How it Works</a></li>
       </ul>
     </li>
     <li>
@@ -59,35 +59,39 @@ Here's why you should use this chatbot:
 
 ### How it Works (for non-programmers)
 
-1. main.py - Initializing the Chatbot:
-This file is the core of your chatbot. It starts by loading necessary configurations and setting up tools that your chatbot will use. Specifically, it:
+A very simple way of viewing this chatbot is customizing our own personal ChatGPT assistant by giving it prompts and specific training information.  
+  
+For example, an oversimplified prompt could look like "Your role is to assist users by providing information about UCSD Recreation." This helps inform our model what type of answers it should give.  
+  
+Then the model is given training data as PDFs of the UCSD Recreation website. This is the primary knowledge base of our chatbot.  
+  
+  
+The chatbot is built using LLama Index, an industry-leading data framework which loads the UCSD Recreation information and stores it in a way that allows our large language model (LLM) - in this case OpenAI's gpt-3.5-turbo-0125 - to understand.  
+After our training information is properly indexed, the user's query is passed to our custom
 
-* Establishes a connection to a data source or service, represented here as "rec_engine", which seems to handle queries related to "UC San Diego Recreation".
-* Initializes a chatbot with a predefined model ("gpt-3.5-turbo-0125") capable of understanding and generating human-like text.
-* Defines a function, chat_with_bot, which takes user input, processes it through the chatbot, and returns the chatbot's response. If the chatbot is unsure, it asks for clarification.
+1. main.py - Initializing the AI of the Chatbot:
+* Core of the chatbot. Puts pieces together to create the final form of our AI agent.
 2. pdf.py - Handling PDF Data:
-This file manages interactions with PDF documents. It:
-
-Loads data from a PDF file, presumably containing information relevant to the chatbot's knowledge base.
-Builds or loads an index from this data, allowing the chatbot to efficiently search and retrieve information from the PDF when answering queries.
+* Loads data from a PDF file, the chatbot's knowledge base.
+* Builds an index from this data, allowing the chatbot to efficiently search and retrieve information from the PDF when answering queries.
+* (Can be updated to handle many other forms of data simultaneously).
 3. prompts.py - Setting Up Query Templates:
-This file seems to define templates for queries that your chatbot might receive, helping it understand how to process and respond to various types of inquiries. It:
-
-Defines an instruction set for converting user queries into executable code, specifically aimed at processing data.
-Establishes a context or purpose for the chatbot, which in this case is to provide information about UC San Diego Recreation facilities.
+* Defines templates for queries that your chatbot might receive, helping it understand how to process and respond to various types of inquiries.
+* Gives an instruction set for converting user queries into executable code, specifically aimed at processing data.
+* Establishes a context or purpose for the chatbot, which in this case is to provide information about UC San Diego Recreation facilities.
 4. app.py - Web Application Interface:
-This script uses Flask, a web framework, to create a web interface for your chatbot. It:
-
-Sets up web routes, which are essentially paths users can navigate to interact with your chatbot through a web page.
-Defines functions for what should happen when users visit these routes, like displaying the chat interface or handling a query sent by a user.
+* Uses Flask, a web framework, to create a web interface for your chatbot.
+* Sets up web routes, which are essentially paths users can navigate to interact with your chatbot through a web page.
+* Defines functions for what should happen when users visit these routes, like displaying the chat interface or handling a query sent by a user.
 5. index.html - The Web Page:
-This is the HTML file that defines the structure of the web page where users can interact with the chatbot. It includes elements like text boxes and buttons that users will use to input their questions.
+* Defines the structure of the web page where users can interact with the chatbot.
+* Includes elements like text boxes and buttons that users will use to input their questions.
 
 6. style.css - Styling the Web Page:
-This CSS file adds styles to the web page, defining how elements should look visually (like colors, fonts, and layouts) to make the user interface appealing and easy to use.
+* Adds styles to the web page, defining how elements should look visually (like colors, fonts, and layouts) to make the user interface appealing and easy to use.
 
 7. script.js - Interactivity of the Web Page:
-This JavaScript file makes the web page interactive. It handles user actions, like clicking the submit button after typing a question, and ensures that these actions trigger responses from the chatbot.
+* Makes the web page interactive. Handles user actions, like clicking the submit button after typing a question, and ensures that these actions trigger responses from the chatbot.
 
 
 
