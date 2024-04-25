@@ -12,6 +12,8 @@
   </p>
 </div>
 
+![image](https://github.com/wewefel/Triton_Bot/assets/99102919/14a3b7e2-452e-4d0f-a5de-49047cc2d8e9)
+
 
 
 <!-- TABLE OF CONTENTS -->
