@@ -4,7 +4,7 @@ body {
     background: #E8EBF5;
     padding: 0;
     margin: 0;
-    font-family: Raleway;
+    font-family: 'Inter', sans-serif;
 }
 
 .chat-box {
@@ -20,9 +20,10 @@ body {
     right: 0;
     bottom: 0;
     margin: 15px;
-    background: #fff;
     border-radius: 15px;
     visibility: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
 .chat-box-header {
@@ -32,7 +33,9 @@ body {
     display: flex;
     font-size: 14px;
     padding: 0.5em 0;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2), 0 -1px 10px rgba(172, 54, 195, 0.3), 0 1px 10px rgba(0, 0, 0, 0.025);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2), 0 -1px 10px rgba(53, 51, 181, 0.3), 0 1px 10px rgba(0, 0, 0, 0.025);
+    color:#fff;
+    background: linear-gradient(135deg, #2940a8, #e8dd3b);
 }
 
 .chat-box-header h3 {
@@ -56,10 +59,12 @@ body {
 }
 
 .chat-box-body {
-    height: 75%;
-    background: #f8f8f8;
-    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;  /* Stacks child elements (messages) vertically */
+    overflow-y: scroll;      /* Allows scrolling when content overflows */
     padding: 12px;
+    background: #f8f8f8;    /* Background color of the chat area */
+    height: 75%;             /* Adjust as necessary to fit your design */
 }
 
 .chat-box-body::-webkit-scrollbar {
@@ -68,17 +73,17 @@ body {
 }
 
 .chat-box-body-send {
-    width: auto;
-    max-width: 250px;
-    float: right;
+    align-self: flex-end;
     background-color: #007bff;
-    color: #fff;
+    color: white;
     padding: 10px 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.015);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 14px;
-    clear: both;
-    word-break: break-word;
+}
+
+.chat-box-body-send, .chat-box-body-receive {
+    transition: background-color 0.3s ease-in-out;
 }
 
 .chat-box-body-send p,
@@ -102,22 +107,38 @@ body {
 }
 
 .chat-box-body-receive {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.chat-bot-icon-container {
+    flex-shrink: 0;
+    margin-right: 0px;
     width: auto;
-    max-width: 250px;
-    float: left;
+    height: auto;
+}
+
+
+.chat-message-container {
+    flex-grow: 1;
     background-color: white;
-    color: #444;
     padding: 10px 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.015);
-    margin-bottom: 14px;
-    clear: both;
-    word-break: break-word;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-box-body-receive img.chatbot-icon {
+    width: 30px; /* Set the size of the icon */
+    height: auto;
+    margin-right: 8px; /* Space between the icon and the message */
 }
 
 .chat-box-footer {
     position: relative;
     display: flex;
+    background: #f8f8f8
 }
 
 .chat-box-footer button,
@@ -127,6 +148,7 @@ body {
     font-size: 14px;
     background: white;
     cursor: pointer;
+    color: black;
 }
 
 .chat-box-footer button:focus,
@@ -138,12 +160,17 @@ body {
     padding: 10px;
     border: none;
     border-radius: 50px;
-    background: whitesmoke;
+    background: rgb(238, 237, 237);
     margin: 10px;
     font-family: ubuntu;
     font-weight: 600;
     color: #444;
     width: 320px;
+}
+
+.chat-box-footer input:focus {
+    outline: 1px solid #aaa; /* Skinnier and lighter outline */
+    outline-offset: 2px; /* Optional: Adjusts the space between the border and the outline */
 }
 
 .chat-box-footer .send {
@@ -159,7 +186,8 @@ body {
 
 .chat-button {
     padding: 25px 16px;
-    background: #2C50EF;
+    background: #2C50EF; /* Enhanced button styling */
+    transition: background-color 0.3s;
     width: 120px;
     position: absolute;
     bottom: 0;
@@ -170,6 +198,10 @@ body {
     border-bottom-left-radius: 25px;
     box-shadow: 0 2px 15px rgba(44, 80, 239, 0.21); /* Converted #2C50EF to its RGB equivalent */
     cursor: pointer;
+}
+
+.chat-button:hover {
+    background: #1a34c8; /* Darker shade on hover */
 }
 
 .chat-button span::before {
