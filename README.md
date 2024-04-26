@@ -12,7 +12,8 @@
   </p>
 </div>
 
-![image](https://github.com/wewefel/Triton_Bot/assets/99102919/14a3b7e2-452e-4d0f-a5de-49047cc2d8e9)
+![image](https://github.com/wewefel/Triton_Bot/assets/99102919/86a1a901-7b9b-4476-a827-b18a4cc69f0b)
+
 
 
 
@@ -86,7 +87,9 @@ Then the model is given training data as PDFs of the UCSD Recreation website. Th
   
   
 The chatbot is built using LLama Index, an industry-leading data framework which loads the UCSD Recreation information and stores it in a way that allows our large language model (LLM) - in this case OpenAI's gpt-3.5-turbo-0125 - to understand.  
-After our training information is properly indexed, the user's query is passed to our custom
+After our training information is properly indexed, the user's query is passed to our AI model to generate a response.  
+  
+Brief explanation of each file:  
 
 1. main.py - Initializing the AI of the Chatbot:
 * Core of the chatbot. Puts pieces together to create the final form of our AI agent.
@@ -192,8 +195,10 @@ _Creating a virtual environment is important for maintaining its own dependencie
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-
-
+* Model is already pretrained on the most common questions asked by UCSD Recreation patrons.
+  * Ex: "When is RIMAC open?" "Is there open rec basketball today?" "Are you open over summer break?"
+* If user input does not match a predefined question, Triton Bot will search through training data (rec.pdf) to find an answer.
+* If Triton Bot still cannot answer the question, it will state that it does not understand and direct the user to contact customer service.
 
 [Back to Top](#top)
 
@@ -212,19 +217,6 @@ Wallace Wefel - [LinkedIn](https://www.linkedin.com/in/wallace-wefel-67a932104/)
 
 [Back to Top](#top)
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
 
 
 
