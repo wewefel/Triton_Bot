@@ -37,28 +37,28 @@ In the recent year, chatbots have gained tremendous popularity as methods of imp
 However, the chatbot used in this project has infinite scalability and requires little-to-no cost.
 
 ### Why Triton Bot is Helpful
-* 24/7 immediate support  
+* **24/7 immediate support**  
   * Chatbots are available around the clock, meaning they can provide immediate responses to customer inquiries at any time, day or night. This is particularly valuable because it caters to customers who may seek help outside of standard business hours or when staff is overwhelmed.
   * Immediate response times can significantly boost customer satisfaction and can be a deciding factor in retaining customers who seek instant solutions.
-* Enhancing user experience
+* **Enhancing user experience**
   * A chatbot can make navigating a website easier by answering questions, providing recommendations, and guiding users through the site, which enhances the overall user experience.
   * Good user experience keeps visitors on your website longer and encourages them to return, increasing the likelihood of converting visits into sales.
-* Streamlining customer service
+* **Streamlining customer service**
   * Chatbots can handle a large volume of queries simultaneously, something that would require many human agents otherwise.
   * They can quickly sort and direct queries to the appropriate channels if human intervention is needed, thus streamlining the customer service process.
   * This helps in managing customer service during high traffic times without compromising the quality of service.
-* Improving business operations
+* **Improving business operations**
   * By automating responses and handling routine inquiries, chatbots free up human agents to focus on more complex and high-value interactions.
   * This optimization of workload can lead to more efficient business operations, as resources can be better allocated, leading to faster resolution of issues and more personalized customer service where it counts.
-* Cost efficient
+* **Cost efficient**
   * Implementing a chatbot is significantly more cost-effective than employing a full-time staff for customer service. Chatbots reduce the labor cost involved in handling customer interactions, especially those that are routine and repetitive.
   * Over time, this can lead to significant cost savings, allowing UCSD Recreation to invest resources elsewhere to grow their business.
   * Approximate server cost: $5-10/month. Cost of ChatGPT: Input $0.50/1M (million) tokens, Output $1.50/1M (million) tokens.
     * Tokens = pieces of words. Basically, it is extremely cheap.
-* Consistent customer interactions
+* **Consistent customer interactions**
   * Chatbots provide a consistent level of service with every interaction. They follow predefined workflows and responses, ensuring that every customer receives the same information and quality of service.
   * This consistency helps in building trust and reliability, as customers feel confident that they will receive the same helpful and accurate information every time they interact with the chatbot.
-* And more!
+* **And more!**
 
 [Back to Top](#top)
 
@@ -76,28 +76,28 @@ After our training information is properly indexed, the user's query is passed t
   
 Brief explanation of each file:  
 
-1. main.py - Initializing the AI of the Chatbot:
+1. **main.py** - Initializing the AI of the Chatbot:
 * Core of the chatbot. Puts pieces together to create the final form of our AI agent.
-2. pdf.py - Handling PDF Data:
+2. **pdf.py** - Handling PDF Data:
 * Loads data from a PDF file, the chatbot's knowledge base.
 * Builds an index from this data, allowing the chatbot to efficiently search and retrieve information from the PDF when answering queries.
 * (Can be updated to handle many other forms of data simultaneously).
-3. prompts.py - Setting Up Query Templates:
+3. **prompts.py** - Setting Up Query Templates:
 * Defines templates for queries that your chatbot might receive, helping it understand how to process and respond to various types of inquiries.
 * Gives an instruction set for converting user queries into executable code, specifically aimed at processing data.
 * Establishes a context or purpose for the chatbot, which in this case is to provide information about UC San Diego Recreation facilities.
-4. app.py - Web Application Interface:
+4. **app.py** - Web Application Interface:
 * Uses Flask, a web framework, to create a web interface for your chatbot.
 * Sets up web routes, which are essentially paths users can navigate to interact with your chatbot through a web page.
 * Defines functions for what should happen when users visit these routes, like displaying the chat interface or handling a query sent by a user.
-5. index.html - The Web Page:
+5. **index.html** - The Web Page:
 * Defines the structure of the web page where users can interact with the chatbot.
 * Includes elements like text boxes and buttons that users will use to input their questions.
 
-6. style.css - Styling the Web Page:
+6. **style.css** - Styling the Web Page:
 * Adds styles to the web page, defining how elements should look visually (like colors, fonts, and layouts) to make the user interface appealing and easy to use.
 
-7. script.js - Interactivity of the Web Page:
+7. **script.js** - Interactivity of the Web Page:
 * Makes the web page interactive. Handles user actions, like clicking the submit button after typing a question, and ensures that these actions trigger responses from the chatbot.
 
 [Back to Top](#top)
@@ -107,11 +107,11 @@ Brief explanation of each file:
 
 ### Prerequisites
 
-1. Ensure Python 3.9.0 or greater is installed:
+1. **Ensure Python 3.9.0 or greater is installed:**
 * Before starting, make sure Python 3.9.0 or any newer version is installed on your system. You can check this by running python3 --version in your terminal or command prompt. If it’s not installed, you should install it from the official Python website [here](https://www.python.org/downloads).
-2. Install Git:
+2. **Install Git:**
 * If you don't already have Git installed on your computer, you'll need to install it first. You can download Git from [here](https://git-scm.com/).
-3. Open Your Terminal or Command Prompt: Navigate to the directory where you want to clone the repository (this example uses desktop as the directory, but feel free to change).
+3. **Open Your Terminal or Command Prompt:** Navigate to the directory where you want to clone the repository (this example uses desktop as the directory, but feel free to change).
 * On Windows:
    ``` sh
    cd Desktop
@@ -131,7 +131,7 @@ Brief explanation of each file:
 
 _Creating a virtual environment is important for maintaining its own dependencies independent of other projects. This prevents conflicts between package versions that can lead to bugs and compatibility issues._
 
-1. If Triton_Bot is on your desktop, use this command to navigate to the directory:
+1. **If Triton_Bot is on your desktop, use this command to navigate to the directory:**
 * Windows:
   ``` sh
   cd Desktop\Triton_Bot
@@ -140,12 +140,12 @@ _Creating a virtual environment is important for maintaining its own dependencie
   ``` sh
   cd ~/Desktop/Triton_Bot
   ```
-2. Once you are inside the Triton_Bot directory, create the virtual environment using:
+2. **Once you are inside the Triton_Bot directory, create the virtual environment using:**
    ``` sh
    python3 -m venv env
    ```
 * This command creates a new folder in the TritonBot directory called 'env' where the virtual environment files will be stored.
-3. Activate the Virtual Environment:
+3. **Activate the Virtual Environment:**
 * Windows:
   ``` sh
   env\Scripts\activate
@@ -154,12 +154,12 @@ _Creating a virtual environment is important for maintaining its own dependencie
   ``` sh
   source env/bin/activate
   ```
-4. Install Requirements:
+4. **Install Requirements:**
 * With the virtual environment activated, install all the packages listed in the requirements.txt file by running:
   ``` sh
   pip install -r requirements.txt
   ```
-5. Make sure the script is being run in your virtual environment. For example, in VS Code it should say 'Python 3.9.0 env' at the bottom of your screen, and in the VS Code command prompt you should see '(env)' before your username.
+5. **Make sure the script is being run in your virtual environment.** For example, in VS Code it should say 'Python 3.9.0 env' at the bottom of your screen, and in the VS Code command prompt you should see '(env)' before your username.
 
 [Back to Top](#top)
 
