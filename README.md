@@ -17,7 +17,7 @@
 
 ## Table of Contents
 1. [About The Project](#about-the-project)
-   - [Why Triton Bot is Helpful](#why-triton-bot-is-helpful)
+   - [Why Triton Bot is Beneficial](#why-triton-bot-is-beneficial)
    - [How it Works (for non-programmers)](#how-it-works-for-non-programmers)
 2. [Getting Started](#getting-started)
    - [Prerequisites](#prerequisites)
@@ -33,48 +33,41 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-In the recent year, chatbots have gained tremendous popularity as methods of improving website functionality and usability. There are several companies offering chatbot builders, but these services are often oversimplified due to their no-code implementation and extremely expensive.
-However, the chatbot used in this project has infinite scalability and requires little-to-no cost.
+In recent years, chatbots have increasingly become essential tools for enhancing website functionality and user engagement. While several companies offer chatbot services, many of these options are either overly simplistic due to their no-code platforms or prohibitively expensive. Our project introduces a chatbot with infinite scalability and minimal cost, designed to revolutionize how we interact with our users on the UCSD Recreation website.
 
-### Why Triton Bot is Helpful
-* **24/7 immediate support**  
-  * Chatbots are available around the clock, meaning they can provide immediate responses to customer inquiries at any time, day or night. This is particularly valuable because it caters to customers who may seek help outside of standard business hours or when staff is overwhelmed.
-  * Immediate response times can significantly boost customer satisfaction and can be a deciding factor in retaining customers who seek instant solutions.
-* **Enhancing user experience**
-  * A chatbot can make navigating a website easier by answering questions, providing recommendations, and guiding users through the site, which enhances the overall user experience.
-  * Good user experience keeps visitors on your website longer and encourages them to return, increasing the likelihood of converting visits into sales.
-* **Streamlining customer service**
-  * Chatbots can handle a large volume of queries simultaneously, something that would require many human agents otherwise.
-  * They can quickly sort and direct queries to the appropriate channels if human intervention is needed, thus streamlining the customer service process.
-  * This helps in managing customer service during high traffic times without compromising the quality of service.
-* **Improving business operations**
-  * By automating responses and handling routine inquiries, chatbots free up human agents to focus on more complex and high-value interactions.
-  * This optimization of workload can lead to more efficient business operations, as resources can be better allocated, leading to faster resolution of issues and more personalized customer service where it counts.
-* **Cost efficient**
-  * Implementing a chatbot is significantly more cost-effective than employing a full-time staff for customer service. Chatbots reduce the labor cost involved in handling customer interactions, especially those that are routine and repetitive.
-  * Over time, this can lead to significant cost savings, allowing UCSD Recreation to invest resources elsewhere to grow their business.
-  * Approximate server cost: $5-10/month. Cost of ChatGPT: Input $0.50/1M (million) tokens, Output $1.50/1M (million) tokens.
-    * Tokens = pieces of words. Basically, it is extremely cheap.
-* **Consistent customer interactions**
-  * Chatbots provide a consistent level of service with every interaction. They follow predefined workflows and responses, ensuring that every customer receives the same information and quality of service.
-  * This consistency helps in building trust and reliability, as customers feel confident that they will receive the same helpful and accurate information every time they interact with the chatbot.
-* **And more!**
+### Why Triton Bot is Beneficial
 
-[Back to Top](#top)
+#### 24/7 Immediate Support
+- **Constant Availability:** Triton Bot operates continuously, providing immediate responses to user inquiries anytime, which is crucial for accommodating users after hours or during peak times when live staff may be unavailable.
+- **Enhanced Customer Satisfaction:** Immediate response capabilities can significantly improve user satisfaction, potentially increasing customer retention by offering swift solutions to their needs.
 
-### How it Works (for non-programmers)
+#### Enhancing User Experience
+- **Simplified Navigation:** Triton Bot assists users by answering questions, offering recommendations, and guiding them through the website, which simplifies the navigation process and enhances the overall user experience.
+- **Increased Engagement:** Improved user experience keeps visitors on the site longer and increases the likelihood of conversion, encouraging repeat visits and engagement.
 
-A very simple way of viewing this chatbot is customizing our own personal ChatGPT assistant by giving it prompts and specific training information.  
+#### Streamlining Customer Service
+- **Efficient Query Handling:** The bot can manage multiple queries at once, reducing the need for a large number of human agents.
+- **Effective Query Routing:** It efficiently categorizes and directs queries to appropriate human agents when necessary, enhancing the overall efficiency of customer service operations.
+
+#### Improving Business Operations
+- **Operational Efficiency:** By automating routine interactions, Triton Bot allows human agents to focus on complex queries, optimizing operational efficiency and resource allocation.
+- **Cost Savings:** Implementing the chatbot is more cost-effective than maintaining a large staff, potentially saving substantial amounts over time. Approximate server costs are $5-10/month, with operational costs for ChatGPT usage around $0.50/1M tokens for input and $1.50/1M tokens for output.
+
+#### Consistent Customer Interactions
+- **Reliable Service:** Triton Bot delivers consistent responses based on predefined workflows, ensuring every user receives the same high quality of service.
+- **Trust and Reliability:** This consistency builds trust and reliability, as users can expect the same accurate and helpful information with every interaction.
+
+### How It Works (For Non-Programmers)
+
+Think of Triton Bot as customizing a personal ChatGPT assistant. Here’s how it works in simple terms:
   
-For example, an oversimplified prompt could look like "Your role is to assist users by providing information about UCSD Recreation." This helps inform our model what type of answers it should give.  
+- **Initial Setup:** We start by defining the chatbot's role, for example: "Assist users by providing information about UCSD Recreation." This setup informs the model about the types of responses it should generate.
   
-Then the model is given training data as PDFs of the UCSD Recreation website. This is the primary knowledge base of our chatbot.  
+- **Training:** The model is trained using documents like PDFs from the UCSD Recreation website, creating a robust knowledge base.
   
+- **Data Handling:** We utilize LLama Index, a leading data framework, to manage the UCSD Recreation information effectively. This system prepares the data for our large language model, OpenAI's gpt-3.5-turbo-0125, ensuring it can access and understand the necessary information.
   
-The chatbot is built using LLama Index, an industry-leading data framework which loads the UCSD Recreation information and stores it in a way that allows our large language model (LLM) - in this case OpenAI's gpt-3.5-turbo-0125 - to understand.  
-After our training information is properly indexed, the user's query is passed to our AI model to generate a response.  
-  
-Brief explanation of each file:  
+- **Query Processing:** When a user asks a question, the query is processed by our AI model, which then generates an accurate and helpful response based on the indexed information.
 
 1. **main.py** - Initializing the AI of the Chatbot:
 * Core of the chatbot. Puts pieces together to create the final form of our AI agent.
