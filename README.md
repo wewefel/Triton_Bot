@@ -2,11 +2,8 @@
 
 
 
-<br />
 <div align="center">
-
-  <h3 align="center">UC San Diego Chatbot</h3>
-
+  <h1 align="center">UC San Diego Chatbot</h1>
   <p align="center">
     AI chatbot assistant for website using ChatGPT integration!
   </p>
